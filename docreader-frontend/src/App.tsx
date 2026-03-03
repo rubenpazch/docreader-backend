@@ -63,7 +63,7 @@ function App() {
       {extractedText && (
         <div style={{ marginTop: 20 }}>
           <h4>Extracted Text:</h4>
-          <pre style={{ background: '#f4f4f4', padding: 10 }}>{extractedText}</pre>
+          <pre style={{ background: '#f4f4f4', padding: 10, color: '#222' }}>{extractedText}</pre>
         </div>
       )}
     </div>
