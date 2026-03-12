@@ -5,6 +5,6 @@ class BudgetCalculatorService
   end
 
   def total
-    @items.sum { |item| item[:cantidad] * item[:precio] }
+    @items.sum { |item| item[:cantidad].to_i * item[:precio].to_f }
   end
 end

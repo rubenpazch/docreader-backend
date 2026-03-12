@@ -20,6 +20,12 @@ RSpec.describe ProductAlias, type: :model do
   end
 
   describe 'reglas de negocio' do
+    it 'asigna public_uuid al crear' do
+      product_alias = create(:product_alias)
+
+      expect(product_alias.public_uuid).to match(/\A[0-9a-f\-]{36}\z/)
+    end
+
     it 'no permite alias duplicados' do
       product = create(:product)
       create(:product_alias, name: 'lapiz', product: product)

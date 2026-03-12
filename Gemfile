@@ -57,3 +57,4 @@ end
 gem "rack-cors", "~> 3.0"
 
 gem "active_storage_validations", "~> 3.0"
+gem "csv"
